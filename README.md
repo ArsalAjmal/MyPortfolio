@@ -13,7 +13,6 @@ A modern, responsive personal portfolio website showcasing my skills, projects, 
 - [About](#about)
 - [Features](#features)
 - [Technologies Used](#technologies-used)
-- [Project Structure](#project-structure)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Sections](#sections)
@@ -45,13 +44,6 @@ This is my personal portfolio website that presents my professional journey, ski
 - **Font Awesome**: Icons and visual elements
 - **Google Fonts**: Poppins font family for typography
 
-## 📁 Project Structure
-portfolio-233503/
-├── portfolio.html # Main HTML file
-├── portfolioStyle.css # Custom CSS styles
-├── portfolio.js # JavaScript functionality
-├── arsal.jpeg # Profile image
-└── README.md # Project documentation
 
 ## 🚀 Installation
 
@@ -64,17 +56,6 @@ portfolio-233503/
    ```bash
    cd portfolio-233503
    ```
-
-3. **Open the website**
-   - Simply open `portfolio.html` in your web browser
-   - Or use a local server for better development experience:
-     ```bash
-     # Using Python
-     python -m http.server 8000
-     
-     # Using Node.js
-     npx serve .
-     ```
 
 ## 💻 Usage
 
