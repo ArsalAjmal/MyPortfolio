@@ -3,222 +3,181 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arsal Ajmal - Portfolio</title>
-    <link rel="stylesheet" href="portfolioStyle.css">
+    <title>Arsal Ajmal - Personal Profile</title>
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Font Awesome CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="portfolioStyle.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <h2>Arsal <span class="last-name">Ajmal</span></h2>
-            </div>
-            <ul class="nav-menu">
-                <li class="nav-item">
-                    <a href="#home" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#about" class="nav-link">About</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#projects" class="nav-link">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#contact" class="nav-link">Contact</a>
-                </li>
-            </ul>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home"><i class="fa-solid fa-user"></i> Arsal Ajmal</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#home"><i class="fa-solid fa-house"></i> Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about"><i class="fa-solid fa-address-card"></i> About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#work"><i class="fa-solid fa-briefcase"></i> Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education"><i class="fa-solid fa-graduation-cap"></i> Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects"><i class="fa-solid fa-diagram-project"></i> Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#hobbies"><i class="fa-solid fa-heart"></i> Hobbies</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+                </ul>
             </div>
         </div>
     </nav>
 
-    
-    <section id="home" class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <h1 class="hero-title">
-                    Hi, I'm <span class="highlight">Arsal Ajmal</span>
-                </h1>
-                <p class="hero-subtitle">Computer Science Student | Software Developer</p>
-                <p class="hero-description">
-                    A passionate 5th semester BS Computer Science student with expertise in 
-                    full-stack development, mobile applications, and database management.
-                </p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">View My Work</a>
-                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <div class="floating-card">
-                    <img src="arsal.jpeg" alt="Arsal Ajmal" class="profile-image">
-                </div>
-            </div>
+    <!-- Header Section -->
+    <header id="home" class="profile-header">
+        <div class="container text-center py-5">
+            <img src="arsal.jpeg" alt="Arsal Ajmal" class="profile-img mb-3">
+            <h1 class="fw-bold">Arsal Ajmal</h1>
+            <h3><i class="fa-solid fa-laptop-code"></i> Software Developer</h3>
         </div>
-        <div class="scroll-indicator">
-            <div class="scroll-arrow"></div>
-        </div>
-    </section>
+    </header>
 
-    <!-- About Section -->
-    <section id="about" class="about">
+    <!-- About Me Section -->
+
+<section id="about" class="about-section">
+    <div class="container">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-md-8 text-center">
+                <article>
+                    <h2 class="section-title"><i class="fa-solid fa-user-graduate"></i> About Me</h2>
+                    <p>
+                        I'm a passionate Computer Science student at Air University, currently in my 5th semester. I love building modern software solutions, exploring full-stack development, mobile apps, and databases. My goal is to create impactful technology and collaborate with creative minds.
+                    </p>
+                </article>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Work Experience Section -->
+    <section id="work" class="work-section">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>
-                        I'm a dedicated Computer Science student currently in my 5th semester at 
-                        Air University. My passion lies in creating innovative software solutions 
-                        that solve real-world problems.
-                    </p>
-                    <p>
-                        With experience in multiple programming languages and frameworks, I enjoy 
-                        working on projects that challenge me and help me grow as a developer. 
-                        From mobile applications to web development and database management systems, 
-                        I love exploring different aspects of software engineering.
-                    </p>
-                    <div class="skills">
-                        <h3>Technical Skills</h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag">Flutter</span>
-                            <span class="skill-tag">C#</span>
-                            <span class="skill-tag">HTML/CSS</span>
-                            <span class="skill-tag">JavaScript</span>
-                            <span class="skill-tag">Firebase</span>
-                            <span class="skill-tag">MySQL</span>
-                            <span class="skill-tag">Git</span>
-                            
+            <h2 class="section-title mb-4"><i class="fa-solid fa-briefcase"></i> Work Experience</h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fa-solid fa-building"></i> Internee – Mahmood Group of Industries</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">IT & ERP Department</h6>
+                            <div class="fw-bold mb-2"><i class="fa-solid fa-calendar-days"></i> 18th July 2025 – 29th August 2025</div>
+                            <p class="card-text">Gained hands-on experience in IT support and ERP systems.</p>
                         </div>
                     </div>
                 </div>
-                <div class="about-stats">
-                    <div class="stat-card">
-                        <i class="fas fa-graduation-cap"></i>
-                        <h3>5th Semester</h3>
-                        <p>BS Computer Science</p>
-                    </div>
-                    <div class="stat-card">
-                        <i class="fas fa-code"></i>
-                        <h3>4+</h3>
-                        <p>Projects Completed</p>
-                    </div>
-                    <div class="stat-card">
-                        <i class="fas fa-mobile-alt"></i>
-                        <h3>1</h3>
-                        <p>Mobile Apps</p>
+                <div class="col-md-6">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fa-solid fa-futbol"></i> Football Coach – Groundup Sports Academy</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Under-10 Age Group</h6>
+                            <div class="fw-bold mb-2"><i class="fa-solid fa-calendar-days"></i> April 2024 – Present</div>
+                            <p class="card-text">Coaching and training young players, focusing on skill development and teamwork.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    
-    <section id="projects" class="projects">
+    <!-- Education Section -->
+    <section id="education" class="education-section">
+        <div class="container">
+            <h2 class="section-title mb-4"><i class="fa-solid fa-graduation-cap"></i> Education</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fa-solid fa-university"></i> BS Computer Science</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Air University, Multan</h6>
+                            <div class="fw-bold mb-2"><i class="fa-solid fa-calendar-days"></i> Ongoing, 5th Semester</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fa-solid fa-school"></i> Intermediate (Pre-Medical)</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Kips College, Multan</h6>
+                            <div class="fw-bold mb-2"><i class="fa-solid fa-calendar-days"></i> 2020–2022</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fa-solid fa-flask"></i> O Levels (Science)</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Britain International School System, Multan</h6>
+                            <div class="fw-bold mb-2"><i class="fa-solid fa-calendar-days"></i> 2018–2019</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
         <div class="container">
             <h2 class="section-title">My Projects</h2>
-            <p class="section-subtitle">Here are some of my recent projects that showcase my skills and passion for development</p>
-            
-            <div class="projects-grid">
-                
-                <div class="project-card">
-                    <div class="project-image">
-                        <i class="fas fa-calendar-alt"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">PlanIt</h3>
-                        <p class="project-description">
-                            A modern event planning platform built with Flutter that connects clients 
-                            with professional event organizers. Features include smart search, 
-                            portfolio viewing, secure payments, and real-time notifications.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Flutter</span>
-                            <span class="tech-tag">Firebase</span>
-                            
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-calendar-alt"></i> PlanIt</h5>
+                            <p class="card-text">A modern event planning platform built with Flutter that connects clients with professional event organizers.</p>
+                            <span class="badge bg-primary">Flutter</span>
+                            <span class="badge bg-warning text-dark">Firebase</span>
                         </div>
-                        <div class="project-links">
-                            <a href="https://github.com/ArsalAjmal/PlanIt" target="_blank" class="project-link">
-                                <i class="fab fa-github"></i> View Code
-                            </a>
+                        <div class="card-footer bg-white border-0">
+                            <a href="https://github.com/ArsalAjmal/PlanIt" target="_blank" class="btn btn-outline-dark btn-sm"><i class="fab fa-github"></i> View Code</a>
                         </div>
                     </div>
                 </div>
-
-                
-                <div class="project-card">
-                    <div class="project-image">
-                        <i class="fas fa-warehouse"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Inventory Management System</h3>
-                        <p class="project-description">
-                            A comprehensive inventory management solution built with C# and Entity Framework. 
-                            Features include product tracking, stock management, supplier management, 
-                            and detailed reporting capabilities.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">C#</span>
-                            
-                            <span class="tech-tag">MySQL</span>
-                            <span class="tech-tag">WinForms</span>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-warehouse"></i> Inventory Management System</h5>
+                            <p class="card-text">A comprehensive inventory management solution built with C# and Entity Framework.</p>
+                            <span class="badge bg-secondary">C#</span>
+                            <span class="badge bg-info text-dark">MySQL</span>
+                            <span class="badge bg-success">WinForms</span>
                         </div>
-                        <div class="project-links">
-                            <a href="https://github.com/ArsalAjmal/Inventory-Management-System" target="_blank" class="project-link">
-                                <i class="fab fa-github"></i> View Code
-                            </a>
+                        <div class="card-footer bg-white border-0">
+                            <a href="https://github.com/ArsalAjmal/Inventory-Management-System" target="_blank" class="btn btn-outline-dark btn-sm"><i class="fab fa-github"></i> View Code</a>
                         </div>
                     </div>
                 </div>
-
-                
-                <div class="project-card">
-                    <div class="project-image">
-                        <i class="fas fa-book"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Library Management System</h3>
-                        <p class="project-description">
-                            A complete library management solution designed to streamline library operations. 
-                            Includes book cataloging, member management, borrowing system, 
-                            and automated notifications for overdue books.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">C++</span>
-                            
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-book"></i> Library Management System</h5>
+                            <p class="card-text">A complete library management solution designed to streamline library operations.</p>
+                            <span class="badge bg-secondary">C++</span>
                         </div>
-                        <div class="project-links">
-                            <a href="https://github.com/ArsalAjmal/Library-Management-System" target="_blank" class="project-link">
-                                <i class="fab fa-github"></i> View Code
-                            </a>
+                        <div class="card-footer bg-white border-0">
+                            <a href="https://github.com/ArsalAjmal/Library-Management-System" target="_blank" class="btn btn-outline-dark btn-sm"><i class="fab fa-github"></i> View Code</a>
                         </div>
                     </div>
                 </div>
-
-               
-                <div class="project-card">
-                    <div class="project-image">
-                        <i class="fas fa-building"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Property Management System</h3>
-                        <p class="project-description">
-                            A comprehensive property management platform for real estate operations. 
-                            Features include property listing, tenant management, rent tracking, 
-                            maintenance scheduling, and financial reporting.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">C++</span>
-                        
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-building"></i> Property Management System</h5>
+                            <p class="card-text">A comprehensive property management platform for real estate operations.</p>
+                            <span class="badge bg-secondary">C++</span>
                         </div>
-                        <div class="project-links">
-                            <a href="https://github.com/ArsalAjmal/Property-Management-System" target="_blank" class="project-link">
-                                <i class="fab fa-github"></i> View Code
-                            </a>
+                        <div class="card-footer bg-white border-0">
+                            <a href="https://github.com/ArsalAjmal/Property-Management-System" target="_blank" class="btn btn-outline-dark btn-sm"><i class="fab fa-github"></i> View Code</a>
                         </div>
                     </div>
                 </div>
@@ -226,87 +185,114 @@
         </div>
     </section>
 
-    
-    <section id="contact" class="contact">
+    <!-- Hobbies Section -->
+    <section id="hobbies" class="hobbies-section">
         <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <p class="section-subtitle">I'm always interested in new opportunities and exciting projects</p>
-            
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <article>
+                        <h2 class="section-title"><i class="fa-solid fa-gamepad"></i> Hobbies</h2>
+                        <ul class="hobbies-list">
+                            <li><i class="fa-solid fa-gamepad"></i> Gaming</li>
+                            <li><i class="fa-solid fa-futbol"></i> Football</li>
+                            <li><i class="fa-solid fa-trophy"></i> Cricket</li>
+                            <li><i class="fa-solid fa-table-tennis-paddle-ball"></i> Table Tennis</li>
+                            <li><i class="fa-solid fa-feather"></i> Badminton</li>
+                            <li><i class="fa-solid fa-music"></i> Listening to Music</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+          <!-- <h2 class="section-title">Get In Touch</h2> -->
+            <div class="row g-4">
+                <!-- Contact Info Column -->
+                <div class="col-md-6">
+                    <div class="contact-info">
+                        <h4 class="mb-4"><i class="fa-solid fa-address-book"></i> Contact Information</h4>
+                        <div class="mb-3">
+                            <label class="form-label"><i class="fa-solid fa-envelope"></i> Email</label>
+                            <p><a href="mailto:233503@students.au.edu.pk">233503@students.au.edu.pk</a></p>
                         </div>
-                        <div class="contact-details">
-                            <h3>Email</h3>
-                            <p>233503@students.au.edu.pk</p>
+                        <div class="mb-3">
+                            <label class="form-label"><i class="fa-solid fa-phone"></i> Phone</label>
+                            <p>+92 334 6590606</p>
                         </div>
-                    </div>
-                    
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-phone"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h3>Phone</h3>
-                            <p>03346590606</p>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-graduation-cap"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h3>Education</h3>
-                            <p>BS Computer Science - 5th Semester</p>
-                            <p>Air University</p>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fab fa-github"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h3>GitHub</h3>
-                            <p>github.com/ArsalAjmal</p>
+                        <div class="mb-3">
+                            <label class="form-label"><i class="fab fa-github"></i> GitHub</label>
+                            <p><a href="https://github.com/ArsalAjmal" target="_blank">github.com/ArsalAjmal</a></p>
                         </div>
                     </div>
                 </div>
                 
-                <div class="contact-message">
-                    <h3>Let's Work Together</h3>
-                    <p>
-                        I'm always excited to work on new projects and collaborate with fellow developers. 
-                        Whether you have a project in mind or just want to chat about technology, 
-                        feel free to reach out!
-                    </p>
-                    <div class="social-links">
-                        <a href="https://github.com/ArsalAjmal" target="_blank" class="social-link">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="mailto:233503@students.au.edu.pk" class="social-link">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-                        <a href="tel:03346590606" class="social-link">
-                            <i class="fas fa-phone"></i>
-                        </a>
+                <!-- Contact Form Column -->
+                <div class="col-md-6">
+                    <div class="contact-form">
+                        <h4 class="mb-4"><i class="fa-solid fa-paper-plane"></i> Send a Message</h4>
+                        <form id="contactForm">
+                            <div class="mb-3">
+                                <label for="name" class="form-label"><i class="fa-solid fa-user"></i> Name</label>
+                                <input type="text" class="form-control" id="name" name="name" required>
+                                <div id="nameError" class="error-msg"></div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label"><i class="fa-solid fa-envelope"></i> Email</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                                <div id="emailError" class="error-msg"></div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label"><i class="fa-solid fa-comment-dots"></i> Message</label>
+                                <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                                <div id="messageError" class="error-msg"></div>
+                            </div>
+                            <button type="submit" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i> Send Message</button>
+                            <button type="button" class="btn btn-secondary ms-2" data-bs-toggle="modal" data-bs-target="#downloadModal"><i class="fa-solid fa-file-pdf"></i> Download PDF</button>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <p>&copy; 2024 Arsal Ajmal. All rights reserved.</p>
-                <p>Built with ❤️ using HTML & CSS</p>
+    <!-- Bootstrap Modal for Download PDF -->
+    <div class="modal fade" id="downloadModal" tabindex="-1" aria-labelledby="downloadModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="downloadModalLabel"><i class="fa-solid fa-file-pdf"></i> Download Resume PDF</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            Are you sure you want to download the PDF resume?
+          </div>
+          <div class="modal-footer">
+            <a href="resume.pdf" class="btn btn-success" download><i class="fa-solid fa-download"></i> Yes, Download</a>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer with Social Links -->
+    <footer class="footer-section">
+        <div class="container text-center">
+            <div class="footer-social mb-2">
+                <a href="https://github.com/ArsalAjmal" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/arsal-ajmal-473786205" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:233503@students.au.edu.pk"><i class="fa-solid fa-envelope"></i></a>
             </div>
+            <p>&copy; 2025 Arsal Ajmal. All rights reserved.</p>
         </div>
     </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="portfolio.js"></script>
 </body>
 </html>
