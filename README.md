@@ -49,7 +49,7 @@ This is my personal portfolio website that presents my professional journey, ski
 
 ```
 portfolio-233503/
-├── portfolio.html          # Main HTML file
+├── index.html             # Main HTML file
 ├── portfolioStyle.css      # Custom CSS styles
 ├── portfolio.js           # JavaScript functionality
 ├── arsal.jpeg            # Profile image
@@ -69,7 +69,7 @@ portfolio-233503/
    ```
 
 3. **Open the website**
-   - Simply open `portfolio.html` in your web browser
+   - Simply open `index.html` in your web browser
    - Or use a local server for better development experience:
      ```bash
      # Using Python
@@ -81,7 +81,7 @@ portfolio-233503/
 
 ## 💻 Usage
 
-The portfolio is ready to use out of the box. Simply open `portfolio.html` in any modern web browser. The website includes:
+The portfolio is ready to use out of the box. Simply open `index.html` in any modern web browser. The website includes:
 
 - **Navigation**: Use the navbar to jump between sections
 - **Contact Form**: Fill out the contact form to send messages
@@ -157,7 +157,7 @@ To customize this portfolio for your own use:
 
 1. **Update Personal Information**:
    - Replace `arsal.jpeg` with your profile photo
-   - Update name, title, and contact information in `portfolio.html`
+   - Update name, title, and contact information in `index.html`
    - Modify the about section with your details
 
 2. **Add Your Projects**:
@@ -208,7 +208,7 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ⭐ **Star this repository if you found it helpful!**
 
-🔗 **Live Demo**: [View Portfolio](https://arsalajmal.github.io/portfolio-233503/)
+🔗 **Live Demo**: [View Portfolio](https://arsalajmal.github.io/MyPortfolio/)
 
 ---
 
